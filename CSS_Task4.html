@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task-4</title>
+    <style>
+        .custom-button a {
+            font-size: 20px;
+            position: absolute;
+            border-radius: 0 5px 5px 0;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            left: -90px;
+            transition: 0.3s;
+            width: 100px;
+        }
+
+        .custom-button a:hover {
+            left: 0;
+        }
+
+        .custom-html {
+            top: 20px;
+            background-color: #039d64;
+        }
+
+        .custom-css {
+            top: 80px;
+            background-color: #198ff0;
+        }
+
+        .custom-js {
+            top: 140px;
+            background-color: #f35348;
+        }
+
+        .custom-mern {
+            top: 200px;
+            background-color: #565353;
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-button" class="show">
+        <a href="./index.html" class="custom-html">HTML</a>
+        <a href="./index.html" class="custom-css">CSS</a>
+        <a href="./index.html" class="custom-js">JS</a>
+        <a href="./index.html" class="custom-mern">MERN</a>
+    </div>
+    <div style="margin-left: 90px;">
+        <h2>
+            Hoverable Sidenav Buttons
+        </h2>
+        <p>
+            Hover over the buttons in the left side navigation to open them.
+        </p>
+    </div>
+</body>
+</html>

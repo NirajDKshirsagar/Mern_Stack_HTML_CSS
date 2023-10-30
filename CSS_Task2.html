@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task-2</title>
+    <style>
+        #uniqueID {
+            text-align: right;
+        }
+        .custom-navbar {
+            width: 200px;
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        .custom-navbar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .custom-navbar a {
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            color: rgb(9, 76, 184);
+        }
+
+        .custom-navbar a:hover {
+            background-color: rgb(241, 132, 37);
+        }
+        
+        .custom-list,
+        .custom-item {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .custom-navbar1 {
+            text-align: right;
+            /* border: 1px solid black; */
+            display: flex;
+        }
+
+        .custom-navbar1-col {
+            background-color: gray;
+        }
+
+        .custom-navbar1 a:hover {
+            background-color: gray;
+        }
+
+        .custom-navbar1 a {
+            text-align: right;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: rgb(19, 22, 218);
+            background-color: lightgray;
+            border-right: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td width="500">
+                <h3>Vertical Navigation Bar</h3>
+                <div class="custom-navbar">
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">Bootstrap</a></li>
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <h3>Horizontal Navigation Bar</h3>
+                <div class="custom-navbar1" id="uniqueID">
+                    <a class="active" href="#">Home</a>
+                    <a class="custom-navbar1-col" href="#">Java</a>
+                    <a class="custom-navbar1-col" href="#">HTML</a>
+                    <a class="custom-navbar1-col" href="#">CSS</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
