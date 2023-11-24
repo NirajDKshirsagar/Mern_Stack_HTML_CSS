@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task-7</title>
+    <style>
+        .custom-outer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #c24747;
+            color: white;
+            font-family: serif;
+            margin: 20px;
+        }
+
+        .custom-form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-family: serif;
+            background-color: #812d2d;
+            padding: 20px;
+        }
+
+        .custom-input,.custom-select,.custom-textarea {
+            border: none;
+            padding: 5px;
+            margin-top: 10px;
+            font-family: serif;
+        }
+
+        .custom-submit-button {
+            width: 100%;
+            padding: 8px 0;
+            font-size: 20px;
+            color: black;
+            background-color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-outer">
+        <form class="custom-form-container">
+          <table>
+            <tbody><tr>
+              <td><label for="custom-name">Name:</label></td>
+              <td><input type="text" name="custom-name" id="custom-name" placeholder="your name" class="custom-input"></td>
+            </tr>
+            <tr>
+              <td><label for="custom-email">Email:</label></td>
+              <td><input type="text" name="custom-email" id="custom-email" placeholder="your email" class="custom-input"></td>
+            </tr>
+            <tr>
+              <td><label for="custom-password">Password:</label></td>
+              <td><input type="password" name="custom-password" id="custom-password" class="custom-input"></td>
+            </tr>
+            <tr>
+              <td><label for="custom-phone">Phone Number:</label></td>
+              <td><input type="number" name="custom-phone" id="custom-phone" class="custom-input"></td>
+            </tr>
+            <tr>
+              <td><label for="custom-gender">Gender:</label></td>
+              <td>Male: <input type="radio" name="custom-gender" value="male">
+                Female: <input type="radio" name="custom-gender" value="female">
+                Other: <input type="radio" name="custom-gender" value="other"></td>
+            </tr>
+            <tr>
+              <td><label for="custom-language">Language</label></td>
+              <td>
+                <select name="custom-language" id="custom-language" class="custom-select">
+                  <option value="">Select language</option>
+                  <option value="English">English</option>
+                  <option value="Spanish">Spanish</option>
+                  <option value="Hindi">Hindi</option>
+                  <option value="Arabic">Arabic</option>
+                  <option value="Russian">Russian</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="custom-zipcode">Zip Code:</label></td>
+              <td><input type="number" name="custom-zipcode" id="custom-zipcode" class="custom-input"></td>
+            </tr>
+            <tr>
+              <td><label for="custom-about">About:</label></td>
+              <td><textarea name="custom-about" id="custom-about" placeholder="Write about yourself..." data-gramm="false" wt-ignore-input="true" class="custom-textarea"></textarea></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="submit" class="custom-submit-button" value="Register"></td>
+            </tr>
+          </tbody></table>
+        </form>
+      </div>
+</body>
+</html>
